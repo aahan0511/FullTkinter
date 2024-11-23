@@ -27,6 +27,14 @@ from .rangeSlider import CTkRangeSlider as RangeSlider
 from .popupKeyboard import PopupKeyboard
 from .popupNumpad import PopupNumpad
 
+# TkDial | https://github.com/Akascape/TkDial | `pip install TkDial`
+from .dial import Dial
+from .imageKnob import ImageKnob
+from .scrollKnob import ScrollKnob
+from .jogWheel import Jogwheel as JogWheel
+from .meter import Meter
+
+#
 
 """
 # hPyT | https://github.com/Zingzy/hPyT | `pip install hPyT`

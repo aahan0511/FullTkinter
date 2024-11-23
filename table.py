@@ -77,7 +77,7 @@ _here, **args** means ctkbutton parameters which can also be passed_
 | **command** | specify a command when a table cell is pressed, [returns row, column, value] |
 | **other button parameters* | all other ctk button parameters can be passed |
     
-Author: Akash Bora
+Author: Akash Bora | https://github.com/Akascape
     """
     
     def __init__(

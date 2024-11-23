@@ -17,6 +17,9 @@ from .theme import ThemeManager
 
 
 class CTkScrollableFrame(tkinter.Frame, CTkAppearanceModeBaseClass, CTkScalingBaseClass):
+
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+
     def __init__(self,
                  master: Any,
                  width: int = 200,

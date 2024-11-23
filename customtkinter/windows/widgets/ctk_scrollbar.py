@@ -12,6 +12,8 @@ class CTkScrollbar(CTkBaseClass):
     Scrollbar with rounded corners, configurable spacing.
     Connect to scrollable widget by passing .set() method and set command attribute.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

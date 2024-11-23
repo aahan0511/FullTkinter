@@ -17,6 +17,8 @@ class CTkToplevel(tkinter.Toplevel, CTkAppearanceModeBaseClass, CTkScalingBaseCl
     """
     Toplevel window with dark titlebar on Windows and macOS.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _valid_tk_toplevel_arguments: set = {"master", "bd", "borderwidth", "class", "container", "cursor", "height",

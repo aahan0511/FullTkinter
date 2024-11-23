@@ -12,6 +12,8 @@ class CTkFrame(CTkBaseClass):
     Default foreground colors are set according to theme.
     To make the frame transparent set fg_color=None.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

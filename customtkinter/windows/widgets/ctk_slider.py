@@ -12,6 +12,8 @@ class CTkSlider(CTkBaseClass):
     """
     Slider with rounded corners, border, number of steps, variable support, vertical orientation.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

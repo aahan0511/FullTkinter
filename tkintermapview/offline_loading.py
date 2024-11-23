@@ -11,6 +11,9 @@ from .utility_functions import decimal_to_osm, osm_to_decimal
 
 
 class OfflineLoader:
+
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+
     def __init__(self, path=None, tile_server=None, max_zoom=19):
         if path is None:
             self.db_path = os.path.join(os.path.abspath(os.getcwd()), "offline_tiles.db")

@@ -19,6 +19,8 @@ class CTk(CTK_PARENT_CLASS, CTkAppearanceModeBaseClass, CTkScalingBaseClass):
     """
     Main app window with dark titlebar on Windows and macOS.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _valid_tk_constructor_arguments: set = {"screenName", "baseName", "className", "useTk", "sync", "use"}

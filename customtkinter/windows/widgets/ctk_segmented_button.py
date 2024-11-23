@@ -17,6 +17,8 @@ class CTkSegmentedButton(CTkFrame):
     """
     Segmented button with corner radius, border width, variable support.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

@@ -12,6 +12,8 @@ class CTkInputDialog(CTkToplevel):
     """
     Dialog with extra window, message, entry widget, cancel and ok button.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

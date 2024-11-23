@@ -5,6 +5,8 @@ import darkdetect
 
 class AppearanceModeTracker:
 
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+
     callback_list = []
     app_list = []
     update_loop_running = False

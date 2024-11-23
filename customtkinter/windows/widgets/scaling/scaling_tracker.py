@@ -4,6 +4,9 @@ from typing import Callable
 
 
 class ScalingTracker:
+
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+    
     deactivate_automatic_dpi_awareness = False
 
     window_widgets_dict = {}  # contains window objects as keys with list of widget callbacks as elements

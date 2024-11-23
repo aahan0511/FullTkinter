@@ -1,6 +1,6 @@
 # Tkinter | https://docs.python.org/3/library/tkinter.html
 from tkinter import (
-    Variable, 
+    Variable as Var, 
     StringVar as StrVar, 
     IntVar, 
     DoubleVar as FloatVar, 
@@ -45,36 +45,14 @@ from .dial.jogWheel import Jogwheel as FTkJogwheel
 from .dial.meter import Meter as FTkMeter 
 
 # TkNodeSystem | https://github.com/Akascape/TkNodeSystem | `pip install tknodesystem`
-from nodeSystem.node_types import (
+from .nodeSystem.node_types import (
     NodeValue as FTkNodeValue, 
     NodeOperation as FTkNodeOperation, 
     NodeCompile as FTkNodeCompile, 
     NodeSocket as FTkNodeSocket
 )
-from nodeSystem.node_canvas import NodeCanvas as FTkNodeCanvas
-from nodeSystem.node_menu import NodeMenu as FTkNodeMenu
-
-# hPyT | https://github.com/Zingzy/hPyT | `pip install hPyT`
-"""
-from .hPyT import (
-    all_stuffs as AllStuffs,
-    maximize_button as MaximizeButton,
-    maximize_minimize_button as MaximizeMinimizeButton,
-    minimize_button as MinimizeButton,
-    opacity as Opacity,
-    rainbow_title_bar as RainbowTitleBar,
-    rainbow_border as RainbowBorder,
-    title_bar as TitleBar,
-    title_bar_color as TitleBarColor,
-    title_bar_text_color as TitleBarTextColor,
-    border_color as BorderColor,
-    title_text as TitleText,
-    window_animation as WindowAnimation,
-    window_flash as WindowFlash,
-    window_frame as WindowFrame,
-    get_accent_color as getAccentColor,
-)
-"""
+from .nodeSystem.node_canvas import NodeCanvas as FTkNodeCanvas
+from .nodeSystem.node_menu import NodeMenu as FTkNodeMenu
 
 # CustomTkinter | https://github.com/TomSchimansky/CustomTkinter | `pip install customtkinter`
 from .customtkinter.windows.widgets.appearance_mode import AppearanceModeTracker
@@ -82,10 +60,8 @@ from .customtkinter.windows.widgets.font import FontManager
 from .customtkinter.windows.widgets.scaling import ScalingTracker
 from .customtkinter.windows.widgets.theme import ThemeManager
 from .customtkinter.windows.widgets.core_rendering import DrawEngine
-
 from .customtkinter.windows.widgets.core_rendering import CTkCanvas as FTkCanvas
 from .customtkinter.windows.widgets.core_widget_classes import CTkBaseClass as FTkBaseClass
-
 from .customtkinter.windows.widgets import (
     CTkButton as FTkButton, 
     CTkCheckBox as FTkCheckBox, 
@@ -103,17 +79,14 @@ from .customtkinter.windows.widgets import (
     CTkTabview as FTkTabview, 
     CTkTextbox as FTkTextbox, 
     CTkScrollableFrame as FTkScrollableFrame
-
 )
 from .customtkinter.windows import (
     CTk as FTk,
     CTkToplevel as FTkTopLevel,
     CTkInputDialog as FTkInputDialog
 )
-
 from .customtkinter.windows.widgets.font import CTkFont as FTkFont
 from .customtkinter.windows.widgets.image import CTkImage as FTkImage
-
 from .customtkinter.functions import (
     set_appearance_mode as setAppearanceMode,
     get_appearance_mode as getAppearanceMode,
@@ -124,7 +97,7 @@ from .customtkinter.functions import (
     deactivate_automatic_dpi_awareness as deactivateAutomaticDPIAwareness
 )
 
-# TkinterMapView | https://github.com/TomSchimansky/CustomTkinter | pip install tkintermapview
+# TkinterMapView | https://github.com/TomSchimansky/TkinterMapView | pip install tkintermapview
 from .tkintermapview.map_widget import TkinterMapView as FTkMapView
 from .tkintermapview.offline_loading import OfflineLoader as FTkOfflineLoader
 from .tkintermapview.utility_functions import (

@@ -20,6 +20,8 @@ class CTkTextbox(CTkBaseClass):
     Detailed methods and parameters of the underlaying tkinter.Text widget can be found here:
     https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/text.html
     (most of them are implemented here too)
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _scrollbar_update_time = 200  # interval in ms, to check if scrollbars are needed

@@ -1,6 +1,9 @@
 import tkinter
 
 class NodeSocket:
+
+    "Author: Akash Bora | https://github.com/Akascape"
+
     def __init__(self, canvas, radius=10, center=(50,50), value=0, border_color='white',
                  border_width=1, fg_color='green', hover_color='red', hover=True, socket_num=None):
 

@@ -5,6 +5,9 @@ from .node_args import Args
 import warnings
 
 class NodeValue(Node):
+
+    "Author: Akash Bora | https://github.com/Akascape"
+
     def __init__(self, canvas, width=100, height=50, value=0, border_color='white', text=None, corner_radius=25,
                  border_width=0, fg_color='#37373D', text_color='white', font=("",10), socket_radius=8, socket_hover=True,
                  socket_color="green", socket_hover_color="grey50", highlightcolor='#52d66c', hover=True, justify="center",
@@ -138,6 +141,9 @@ class NodeValue(Node):
             raise ValueError("This option is not configurable:" + list(kwargs.keys())[0])
 
 class NodeOperation(Node):
+
+    "Author: Akash Bora | https://github.com/Akascape"
+
     def __init__(self, canvas, width=100, height=None, inputs=2, border_color='white', text=None, justify="center", hover_text=None,
                  socket_radius=8, corner_radius=25, border_width=0, fg_color='#37373D', text_color='white', font=("",10), multiple_connection=False,
                  highlightcolor='#52d66c', hover=True, socket_color="green", socket_hover_color="grey50", x=0, y=0, none_inputs=False, pass_node_id=False,
@@ -464,7 +470,7 @@ class NodeOperation(Node):
                 if input_id=="input5":
                     self.cellinput5 = None
                     self.canvas.line_list.remove((self.canvas.outputcell.output_.socket_num, self.canvas.inputcell.input_5.socket_num))
-                    if multiple:
+                    if self.multiple:
                         self.connected_inputs5.remove(self.canvas.outputcell)
             except AttributeError: None
             except KeyError: None
@@ -680,6 +686,9 @@ class NodeOperation(Node):
             raise ValueError("This option is not configurable:" + list(kwargs.keys())[0])
         
 class NodeCompile(Node):
+
+    "Author: Akash Bora | https://github.com/Akascape"
+
     def __init__(self, canvas, width=100, height=50, border_color='white', text="Compile", socket_radius=8, corner_radius=25, x=0, y=0, justify="center",
                  border_width=0, fg_color='#37373D',text_color='white', font=("",10), highlightcolor='#52d66c', hover=True, socket_hover=True, fixed=False,
                  socket_color="green", socket_hover_color="grey50", show_value=True, command=None, click_command=None, side="left", num=None,

@@ -80,6 +80,7 @@ submenu.add_option(option="value")
 | _*other frame parameters_ | other ctk frame parameters can also be passed |
 
 Original Author: LucianoSaldivia | https://github.com/LucianoSaldivia
+
 Modified by: Akash Bora (Akascape) | https://github.com/Akascape
     """
     

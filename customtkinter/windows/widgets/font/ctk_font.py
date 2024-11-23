@@ -22,6 +22,8 @@ class CTkFont(Font):
     overstrike	1 for overstruck text, 0 for normal.
 
     Tkinter Font: https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/fonts.html
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

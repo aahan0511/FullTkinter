@@ -14,6 +14,8 @@ class CTkButton(CTkBaseClass):
     """
     Button with rounded corners, border, hover effect, image support, click command and textvariable.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _image_label_spacing: int = 6

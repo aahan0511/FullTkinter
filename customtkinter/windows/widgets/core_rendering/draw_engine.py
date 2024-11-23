@@ -24,6 +24,7 @@ class DrawEngine:
      - draw_checkmark()
      - draw_dropdown_arrow()
 
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     preferred_drawing_method: str = None  # 'polygon_shapes', 'font_shapes', 'circle_shapes'

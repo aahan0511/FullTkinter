@@ -5,6 +5,8 @@ import time
 customtkinter.set_appearance_mode("Dark") 
 
 class NodeMenu(customtkinter.CTkToplevel):
+
+    "Author: Akash Bora | https://github.com/Akascape"
     
     def __init__(self, attach, button_color=None, height: int = 300, width: int = 250, text_color=None,
                  fg_color=None, button_height: int = 30, justify="center", scrollbar_button_color=None,

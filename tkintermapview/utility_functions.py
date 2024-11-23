@@ -4,7 +4,9 @@ from typing import Union
 
 
 def decimal_to_osm(lat_deg: float, lon_deg: float, zoom: int) -> tuple:
-    """ converts decimal coordinates to internal OSM coordinates"""
+    """ converts decimal coordinates to internal OSM coordinates
+    
+    Author: Tom Schimansky | https://github.com/TomSchimansky"""
 
     lat_rad = math.radians(lat_deg)
     n = 2.0 ** zoom
@@ -14,7 +16,9 @@ def decimal_to_osm(lat_deg: float, lon_deg: float, zoom: int) -> tuple:
 
 
 def osm_to_decimal(tile_x: Union[int, float], tile_y: Union[int, float], zoom: int) -> tuple:
-    """ converts internal OSM coordinates to decimal coordinates """
+    """ converts internal OSM coordinates to decimal coordinates 
+    
+    Author: Tom Schimansky | https://github.com/TomSchimansky"""
 
     n = 2.0 ** zoom
     lon_deg = tile_x / n * 360.0 - 180.0
@@ -26,24 +30,32 @@ def osm_to_decimal(tile_x: Union[int, float], tile_y: Union[int, float], zoom: i
 def convert_coordinates_to_address(deg_x: float, deg_y: float) -> geocoder.osm_reverse.OsmReverse:
     """ returns address object with the following attributes:
         street, housenumber, postal, city, state, country, latlng
-        Geocoder docs: https://geocoder.readthedocs.io/api.html#reverse-geocoding """
+        Geocoder docs: https://geocoder.readthedocs.io/api.html#reverse-geocoding 
+
+        Author: Tom Schimansky | https://github.com/TomSchimansky"""
 
     result = geocoder.osm([deg_x, deg_y], method="reverse")
     return result
 
 
 def convert_coordinates_to_city(deg_x: float, deg_y: float) -> str:
-    """ returns city name """
+    """ returns city name 
+    
+    Author: Tom Schimansky | https://github.com/TomSchimansky"""
     return geocoder.osm([deg_x, deg_y], method="reverse").city
 
 
 def convert_coordinates_to_country(deg_x: float, deg_y: float) -> str:
-    """ returns country name """
+    """ returns country name 
+    
+    Author: Tom Schimansky | https://github.com/TomSchimansky"""
     return geocoder.osm([deg_x, deg_y], method="reverse").country
 
 
 def convert_address_to_coordinates(address_string: str) -> tuple:
-    """ returns address object for given coords or None if no address found """
+    """ returns address object for given coords or None if no address found 
+    
+    Author: Tom Schimansky | https://github.com/TomSchimansky"""
 
     result = geocoder.osm(address_string)
 

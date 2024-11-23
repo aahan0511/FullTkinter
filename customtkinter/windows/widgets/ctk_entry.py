@@ -13,6 +13,8 @@ class CTkEntry(CTkBaseClass):
     """
     Entry with rounded corners, border, textvariable support, focus and placeholder.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _minimum_x_padding = 6  # minimum padding between tkinter entry and frame border

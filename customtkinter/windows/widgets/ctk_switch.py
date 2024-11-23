@@ -13,6 +13,8 @@ class CTkSwitch(CTkBaseClass):
     """
     Switch with rounded corners, border, label, command, variable support.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

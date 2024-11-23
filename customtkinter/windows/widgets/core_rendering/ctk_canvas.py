@@ -23,6 +23,8 @@ class CTkCanvas(tkinter.Canvas):
     For an optimal result, the draw-engine creates two aa-circles on top of each other, while
     one is rotated by 90 degrees. This helps to make the circle look more symetric, which is
     not can be a problem when using only a single circle character.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     radius_to_char_fine: dict = None  # dict to map radius to font circle character

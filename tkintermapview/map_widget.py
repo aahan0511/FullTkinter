@@ -24,6 +24,9 @@ from .canvas_polygon import CanvasPolygon
 
 
 class TkinterMapView(tkinter.Frame):
+
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+
     def __init__(self, *args,
                  width: int = 300,
                  height: int = 200,

@@ -21,8 +21,12 @@ from ..utility import pop_from_dict_by_set, check_kwargs_empty
 
 
 class CTkBaseClass(tkinter.Frame, CTkAppearanceModeBaseClass, CTkScalingBaseClass):
-    """ Base class of every CTk widget, handles the dimensions, bg_color,
-        appearance_mode changes, scaling, bg changes of master if master is not a CTk widget """
+    """ 
+Base class of every CTk widget, handles the dimensions, bg_color,
+appearance_mode changes, scaling, bg changes of master if master is not a CTk widget 
+        
+Author: Tom Schimansky | https://github.com/TomSchimansky
+    """
 
     # attributes that are passed to and managed by the tkinter frame only:
     _valid_tk_frame_attributes: set = {"cursor"}

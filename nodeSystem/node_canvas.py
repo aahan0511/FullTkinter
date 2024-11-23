@@ -7,6 +7,9 @@ from .node_wire import NodeWire
 from .node_types import NodeValue, NodeOperation, NodeCompile
 
 class NodeCanvas(tkinter.Canvas):
+
+    "Author: Akash Bora | https://github.com/Akascape"
+
     def __init__(self, master, bg="grey10", width=500, height=500, wire_color="white", wire_width=3,
                  grid_image="lines", zoom=True, wire_dash=True, move=True, wire_hover_color="red", **kwargs):
         

@@ -16,6 +16,8 @@ class CTkLabel(CTkBaseClass):
     For detailed information check out the documentation.
 
     state argument will probably be removed because it has no effect
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     # attributes that are passed to and managed by the tkinter entry only:

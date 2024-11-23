@@ -6,6 +6,8 @@ from typing import Union
 
 class FontManager:
 
+    "Author: Tom Schimansky | https://github.com/TomSchimansky"
+
     linux_font_path = "~/.fonts/"
 
     @classmethod

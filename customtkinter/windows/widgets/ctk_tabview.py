@@ -13,6 +13,8 @@ class CTkTabview(CTkBaseClass):
     """
     Tabview...
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _outer_spacing: int = 10  # px on top or below the button

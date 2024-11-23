@@ -13,6 +13,8 @@ class CTkCheckBox(CTkBaseClass):
     """
     Checkbox with rounded corners, border, variable support and hover effect.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

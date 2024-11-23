@@ -13,6 +13,8 @@ class CTkRadioButton(CTkBaseClass):
     """
     Radiobutton with rounded corners, border, label, variable support, command.
     For detailed information check out the documentation.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     def __init__(self,

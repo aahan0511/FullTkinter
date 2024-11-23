@@ -14,6 +14,8 @@ class CTkImage:
     size: tuple (<width>, <height>) with display size for both images
 
     One of the two images can be None and will be replaced by the other image.
+
+    Author: Tom Schimansky | https://github.com/TomSchimansky
     """
 
     _checked_PIL_import = False

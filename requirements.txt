@@ -1,0 +1,11 @@
+customtkinter
+tkintermapview
+requests
+pillow
+future
+geocoder
+pywin32; platform_system=="Windows"
+pyperclip
+darkdetect
+typing-extensions
+packaging

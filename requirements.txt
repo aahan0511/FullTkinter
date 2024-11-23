@@ -1,5 +1,4 @@
 customtkinter
-tkintermapview
 requests
 pillow
 future

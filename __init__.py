@@ -1,43 +1,61 @@
+# Tkinter | https://docs.python.org/3/library/tkinter.html
+from tkinter import (
+    Variable, 
+    StringVar as StrVar, 
+    IntVar, 
+    DoubleVar as FloatVar, 
+    BooleanVar as BoolVar
+)
+from tkinter import filedialog as FTkFiledialog
+
 # CTkMenuBar | https://github.com/Akascape/CTkMenuBar | `pip install CTkMenuBar`
-from .dropdownMenu import CustomDropdownMenu as DropdownMenu
-from .titleMenu import CTkTitleMenu as TitleMenu
-from .menuBar import CTkMenuBar as MenuBar
+from .menuBar.dropdownMenu import CustomDropdownMenu as FTkDropdownMenu
+from .menuBar.titleMenu import CTkTitleMenu as FTkTitleMenu
+from .menuBar.menuBar import CTkMenuBar as FTkMenuBar
 
 # CTkMessageBox | https://github.com/Akascape/CTkMessagebox | `pip install CTkMessageBox`
-from .messageBox import CTkMessagebox as MessageBox
+from .messageBox.messageBox import CTkMessagebox as FTkMessageBox
 
 # CTkColorPicker | https://github.com/Akascape/CTkColorPicker | `pip install CTkColorPicker`
-from .colorPicker import AskColor
-from .colorPickerWidget import CTkColorPicker as ColorPicker
+from .colorPicker.colorPicker import AskColor as FTkAskColor
+from .colorPicker.colorPickerWidget import CTkColorPicker as FTkColorPicker
 
 # CTkTable | https://github.com/Akascape/CTkTable | `pip install CTkTable`
-from .table import CTkTable as Table
+from .table import CTkTable as FTkTable
 
 # CTkToolTip | https://github.com/Akascape/CTkToolTip | `pip install CTkToolTip`
-from .toolTip import CTkToolTip as ToolTip
+from .toolTip import CTkToolTip as FTkToolTip
 
 # CTkScrollableDropdown | https://github.com/Akascape/CTkScrollableDropdown
-from .scrollableDropdown import CTkScrollableDropdown as ScrollableDropdown
-from .scrollableDropdownFrame import CTkScrollableDropdownFrame as ScrollableDropdownFrame
+from .scrollableDropdown.scrollableDropdown import CTkScrollableDropdown as FTkScrollableDropdown
+from .scrollableDropdown.scrollableDropdownFrame import CTkScrollableDropdownFrame as FTkScrollableDropdownFrame
 
 # CTkRangeSlider | https://github.com/Akascape/CTkRangeSlider
-from .rangeSlider import CTkRangeSlider as RangeSlider
+from .rangeSlider import CTkRangeSlider as FTkRangeSlider
 
 # CTkPopupKeyboard | https://github.com/Akascape/CTkPopupKeyboard
-from .popupKeyboard import PopupKeyboard
-from .popupNumpad import PopupNumpad
+from .popupKeyboard.popupKeyboard import PopupKeyboard as FTkPopupKeyboard
+from .popupKeyboard.popupNumpad import PopupNumpad as FTkPopupNumpad
 
 # TkDial | https://github.com/Akascape/TkDial | `pip install TkDial`
-from .dial import Dial
-from .imageKnob import ImageKnob
-from .scrollKnob import ScrollKnob
-from .jogWheel import Jogwheel as JogWheel
-from .meter import Meter
+from .dial.dial import Dial as FTkDial
+from .dial.imageKnob import ImageKnob as FTkImageKnob 
+from .dial.scrollKnob import ScrollKnob as FTkScrollKnob 
+from .dial.jogWheel import Jogwheel as FTkJogwheel 
+from .dial.meter import Meter as FTkMeter 
 
-#
+# TkNodeSystem | https://github.com/Akascape/TkNodeSystem | `pip install tknodesystem`
+from nodeSystem.node_types import (
+    NodeValue as FTkNodeValue, 
+    NodeOperation as FTkNodeOperation, 
+    NodeCompile as FTkNodeCompile, 
+    NodeSocket as FTkNodeSocket
+)
+from nodeSystem.node_canvas import NodeCanvas as FTkNodeCanvas
+from nodeSystem.node_menu import NodeMenu as FTkNodeMenu
 
-"""
 # hPyT | https://github.com/Zingzy/hPyT | `pip install hPyT`
+"""
 from .hPyT import (
     all_stuffs as AllStuffs,
     maximize_button as MaximizeButton,
@@ -59,57 +77,61 @@ from .hPyT import (
 """
 
 # CustomTkinter | https://github.com/TomSchimansky/CustomTkinter | `pip install customtkinter`
-from customtkinter import (
-    CTkButton as Button,
-    CTkCanvas as Canvas,
-    CTkCheckBox as CheckBox,
-    CTkComboBox as ComboBox,
-    CTkEntry as Entry,
-    CTkFrame as Frame,
-    CTkLabel as Label,
-    CTkOptionMenu as OptionMenu,
-    CTkProgressBar as ProgressBar,
-    CTkRadioButton as RadioButton,
-    CTkScrollbar as Scrollbar,
-    CTkSegmentedButton as SegmentedButton,
-    CTkSlider as Slider,
-    CTkSwitch as Switch,
-    CTkTabview as Tabview,
-    CTkTextbox as Textbox,
-    CTkScrollableFrame as ScrollableFrame
+from .customtkinter.windows.widgets.appearance_mode import AppearanceModeTracker
+from .customtkinter.windows.widgets.font import FontManager
+from .customtkinter.windows.widgets.scaling import ScalingTracker
+from .customtkinter.windows.widgets.theme import ThemeManager
+from .customtkinter.windows.widgets.core_rendering import DrawEngine
+
+from .customtkinter.windows.widgets.core_rendering import CTkCanvas as FTkCanvas
+from .customtkinter.windows.widgets.core_widget_classes import CTkBaseClass as FTkBaseClass
+
+from .customtkinter.windows.widgets import (
+    CTkButton as FTkButton, 
+    CTkCheckBox as FTkCheckBox, 
+    CTkComboBox as FTkComboBox, 
+    CTkEntry as FTkEntry, 
+    CTkFrame as FTkFrame, 
+    CTkLabel as FTkLabel, 
+    CTkOptionMenu as FTkOptionMenu, 
+    CTkProgressBar as FTkProgressBar, 
+    CTkRadioButton as FTkRadioButton, 
+    CTkScrollbar as FTkScrollbar, 
+    CTkSegmentedButton as FTkSegmentedButton, 
+    CTkSlider as FTkSlider, 
+    CTkSwitch as FTkSwitch, 
+    CTkTabview as FTkTabview, 
+    CTkTextbox as FTkTextbox, 
+    CTkScrollableFrame as FTkScrollableFrame
+
 )
-from customtkinter import (
-    AppearanceModeTracker,
-    FontManager,
-    ScalingTracker,
-    ThemeManager,
-    DrawEngine,
-    CTkImage
+from .customtkinter.windows import (
+    CTk as FTk,
+    CTkToplevel as FTkTopLevel,
+    CTkInputDialog as FTkInputDialog
 )
-from customtkinter import (
-    CTk as Window,
-    CTkToplevel as Toplevel,
-    CTkInputDialog as InputDialog
-)
-from customtkinter import CTkFont as Font
-from customtkinter import (
+
+from .customtkinter.windows.widgets.font import CTkFont as FTkFont
+from .customtkinter.windows.widgets.image import CTkImage as FTkImage
+
+from .customtkinter.functions import (
     set_appearance_mode as setAppearanceMode,
     get_appearance_mode as getAppearanceMode,
     set_default_color_theme as setDefaultColorTheme,
     set_widget_scaling as setWidgetScaling,
     set_window_scaling as setWindowScaling,
-    deactivate_automatic_dpi_awareness as deactivateAutomaticDPIAwareness,
-    set_ctk_parent_class as setCTkParentClass
+    set_ctk_parent_class as setCTkParentClass,
+    deactivate_automatic_dpi_awareness as deactivateAutomaticDPIAwareness
 )
 
 # TkinterMapView | https://github.com/TomSchimansky/CustomTkinter | pip install tkintermapview
-from tkintermapview import (
-    TkinterMapView as MapView,
-    OfflineLoader,
+from .tkintermapview.map_widget import TkinterMapView as FTkMapView
+from .tkintermapview.offline_loading import OfflineLoader as FTkOfflineLoader
+from .tkintermapview.utility_functions import (
     convert_coordinates_to_address as convertCoordinatesToAddress,
     convert_coordinates_to_country as convertCoordinatesToCountry,
     convert_coordinates_to_city as convertCoordinatesToCity,
-    convert_address_to_coordinates as convertAddressToCoordinates,
+    convert_address_to_coordinates as convertAddressToCordinates,
     decimal_to_osm as decimalToOSM,
     osm_to_decimal as OSMToDecimal
 )

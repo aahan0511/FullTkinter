@@ -104,7 +104,7 @@ Contributers: Victor Vimbert-Guerlais (helloHackYnow) | https://github.com/hello
         self.canvas.pack(pady=20)
         self.canvas.bind("<B1-Motion>", self.on_mouse_drag)
 
-        self.img1 = Image.open(os.path.join(PATH, 'color_wheel.png')).resize((self.image_dimension, self.image_dimension), Image.Resampling.LANCZOS)
+        self.img1 = Image.open(os.path.join(PATH, 'colorWheel.png')).resize((self.image_dimension, self.image_dimension), Image.Resampling.LANCZOS)
         self.img2 = Image.open(os.path.join(PATH, 'target.png')).resize((self.target_dimension, self.target_dimension), Image.Resampling.LANCZOS)
 
         self.wheel = ImageTk.PhotoImage(self.img1)

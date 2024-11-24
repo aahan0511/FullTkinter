@@ -1,5 +1,5 @@
-# FullTkinter
-This is the bundle of all customtkinter widgets, including fan-made.
+# FullGUI
+This is the bundle of all customtkinter widgets by different authors. This is solely complete without any need to import customtkinter.
 
 # Authors
 

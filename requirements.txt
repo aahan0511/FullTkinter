@@ -9,3 +9,4 @@ darkdetect
 typing-extensions
 packaging
 colour
+av

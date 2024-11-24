@@ -3,11 +3,6 @@ This is the bundle of all customtkinter widgets, including fan-made.
 
 # Authors
 
-## Aahan Salecha | https://github.com/aahan0511 | Me
-
-### Full Tkinter | This Project
-I have combined all the below repositories and created this bundle of GUI Creation.
-
 ## Tom Schimansky | https://github.com/TomSchimansky
 
 ### CustomTkinter | https://github.com/TomSchimansky/CustomTkinter
@@ -46,4 +41,35 @@ I have combined all the below repositories and created this bundle of GUI Creati
 ...
 
 ### TkNodeSystem | https://github.com/Akascape/TkNodeSystem
+...
+
+### CTkRadarChart | https://github.com/Akascape/CTkRadarChart
+...
+
+### CTkPieChart | https://github.com/Akascape/CTkPieChart
+...
+
+## Paulle Demon | https://github.com/PaulleDemon
+
+### tkVideoPlayer | https://github.com/PaulleDemon/tkVideoPlayer
+...
+
+## Thisal Dilmith | https://github.com/Thisal-D
+
+### ctkchart | https://github.com/Thisal-D/ctkchart/
+...
+
+## Zik Pin | https://github.com/ZikPin
+
+### CTkDataVisualizingWidgets | https://github.com/ZikPin/CTkDataVisualizingWidgets
+...
+
+## Dhanoo Surasarang | https://github.com/dhanoosu
+
+### TkTerm | https://github.com/dhanoosu/TkTerm
+...
+
+## Saad Mairaj | https://github.com/Saadmairaj
+
+### tkmacosx | https://github.com/Saadmairaj/tkmacosx
 ...

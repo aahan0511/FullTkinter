@@ -54,6 +54,12 @@ from .nodeSystem.node_types import (
 from .nodeSystem.node_canvas import NodeCanvas as FTkNodeCanvas
 from .nodeSystem.node_menu import NodeMenu as FTkNodeMenu
 
+# CTkRadarChart | https://github.com/Akascape/CTkRadarChart
+from .radarChart import CTkRadarChart as FTkRadarChart
+
+# CTkPieChart | https://github.com/Akascape/CTkPieChart
+from .pieChart import CTkPieChart as FTkPieChart
+
 # CustomTkinter | https://github.com/TomSchimansky/CustomTkinter | `pip install customtkinter`
 from .customtkinter.windows.widgets.appearance_mode import AppearanceModeTracker
 from .customtkinter.windows.widgets.font import FontManager
@@ -98,13 +104,45 @@ from .customtkinter.functions import (
 )
 
 # TkinterMapView | https://github.com/TomSchimansky/TkinterMapView | pip install tkintermapview
-from .tkintermapview.map_widget import TkinterMapView as FTkMapView
-from .tkintermapview.offline_loading import OfflineLoader as FTkOfflineLoader
-from .tkintermapview.utility_functions import (
+from .mapview.map_widget import TkinterMapView as FTkMapView
+from .mapview.offline_loading import OfflineLoader as FTkOfflineLoader
+from .mapview.utility_functions import (
     convert_coordinates_to_address as convertCoordinatesToAddress,
     convert_coordinates_to_country as convertCoordinatesToCountry,
     convert_coordinates_to_city as convertCoordinatesToCity,
     convert_address_to_coordinates as convertAddressToCordinates,
     decimal_to_osm as decimalToOSM,
-    osm_to_decimal as OSMToDecimal
+    osm_to_decimal as OSMtoDecimal
 )
+
+# tkVideoPlayer | https://github.com/PaulleDemon/tkVideoPlayer
+from .videoPlayer import TkinterVideo as FTkVideo
+
+# ctkChart | https://github.com/Thisal-D/ctkchart
+from .chart.LineChart import CTkLineChart as FTkLineChart
+from .chart.Line import CTkLine as FTkLine
+
+# CTkDataVisualizingWidgets | https://github.com/ZikPin/CTkDataVisualizingWidgets
+from .dataVisualizingWidgets.calender import CTkCalendar as FTkCalendar
+from .dataVisualizingWidgets.graph import CTkGraph as FTkGraph
+from .dataVisualizingWidgets.chart import CTkChart as FTkChart
+from .dataVisualizingWidgets.calendarStat import CTkCalendarStat as FTkCalendarStat
+
+# tkTerm | https://github.com/dhanoosu/TkTerm
+from .term.terminal import Terminal as FTkTerminal
+
+# tkmacosx | https://github.com/Saadmairaj/tkmacosx | `pip install tkmacosx`
+from macosx.variables import ColorVar, DictVar
+from macosx.widgets import (
+    CircleButton as FTkCircleButton, 
+    Colorscale as FTkColorscale, 
+    Marquee as FTkMarquee
+)
+from macosx.utils import (
+    check_light_dark as checkLightDark, 
+    delta, 
+    gradient,
+    hex_to_rgb as HEXtoRGB, 
+    get_shade as getShade
+)
+
